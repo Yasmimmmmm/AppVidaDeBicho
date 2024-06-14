@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppVidaDeBicho.Paginas._UsuarioDogPage"
+             Title="_UsuarioDogPage" 
+             BackgroundColor="#FFF1EB"
+             NavigationPage.HasNavigationBar="False"         
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F1BFA8"/>
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout>
+
+        <Grid Padding="0,20,20,0"  ColumnSpacing="4" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+            </Grid.ColumnDefinitions>
+            <Image HeightRequest="80" WidthRequest="320" Source="logoladoum" />
+
+        </Grid>
+
+        <Border Stroke="#0D1C43" StrokeThickness="2" BackgroundColor="#E9E9E9" WidthRequest="350" HeightRequest="370" >
+
+            <Grid Padding="0,0,15,0"  ColumnSpacing="4" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="29" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="2" />
+                    <RowDefinition Height="95" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="130" />
+                    <ColumnDefinition Width="50" />
+
+                </Grid.ColumnDefinitions>
+
+                <Image HeightRequest="130" WidthRequest="330" Source="usuarioicon.svg" Grid.Column="2" />
+
+                <Button ImageSource="xicon.svg"
+                        Grid.Column="1"
+                        WidthRequest="20"
+                        Padding="0,0,0,90"
+                        HorizontalOptions="Start"
+                        BackgroundColor="#E9E9E9"
+                        x:Name="btnXVoltarDogUsuarioHD"
+                        Clicked="btnXVoltarDogUsuarioHD_Clicked"/>
+
+
+                <Button Grid.Row="1"
+                        Grid.Column="1"
+                        Text="Mudar minha conta para outro bicho"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Padding="0,0,80,0"
+                        HorizontalOptions="Start"
+                        FontSize="Medium"
+                        WidthRequest="400"
+                        HeightRequest="40"
+                        BackgroundColor="#E9E9E9"
+                        x:Name="btnMudarPetDog"
+                        Clicked="btnMudarPetDog_Clicked"
+                       />
+                <BoxView  Grid.Row="2"
+                          Grid.Column="2"
+                          HeightRequest="2" 
+                          WidthRequest="320" 
+                          Color="#959595" 
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="Center" />
+
+
+
+                <Button Grid.Row="3"
+                        Grid.Column="0"
+                        Text="Trocar para outra Conta"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Padding="0,10,40,0"
+                        HorizontalOptions="Start"
+                        FontSize="Medium"
+                        WidthRequest="280"
+                        HeightRequest="40"
+                        BackgroundColor="#E9E9E9"
+                        x:Name="btnMudarContaDog"
+                        Clicked="btnMudarContaDog_Clicked"
+                       />
+                <BoxView  Grid.Row="4"
+                          Grid.Column="2"
+                          HeightRequest="2" 
+                          WidthRequest="320" 
+                          Color="#959595" 
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="Center" />
+
+
+
+                <Button Grid.Row="5"
+                        Grid.Column="0"
+                        Text="Ver meu Perfil"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Padding="0,0,190,10"
+                        HorizontalOptions="Start"
+                        FontSize="Medium"
+                        WidthRequest="350"
+                        HeightRequest="40"
+                        BackgroundColor="#E9E9E9"
+                        x:Name="btnMeuPerfilDog"
+                        Clicked="btnMeuPerfilDog_Clicked"
+                       />
+                <BoxView  Grid.Row="6"
+                          Grid.Column="2"
+                          HeightRequest="2" 
+                          WidthRequest="320" 
+                          Color="#959595" 
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="Center" />
+
+
+
+                <Button Grid.Row="7"
+                        Grid.Column="0"
+                        Text="Desconectar"
+                        TextColor="Black"
+                        FontAttributes="Italic"
+                        Padding="0,15,140,0"
+                        HorizontalOptions="Start"
+                        FontSize="Medium"
+                        WidthRequest="280"
+                        HeightRequest="40"
+                        BackgroundColor="#E9E9E9"
+                        x:Name="btnDesconectarDog"
+                        Clicked="btnDesconectarDog_Clicked"
+                        />
+            </Grid>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

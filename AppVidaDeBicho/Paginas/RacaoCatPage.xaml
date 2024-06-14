@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppVidaDeBicho.Paginas.RacaoCatPage"
+             Title="RacaoCatPage"         
+             BackgroundColor="#FFF1EB"
+             NavigationPage.HasNavigationBar="False"         
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F1BFA8"/>
+    </ContentPage.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout Margin="10"  Padding="15"  Spacing="5">
+
+            <Grid ColumnSpacing="4" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="15" />
+                    <RowDefinition Height="155" />
+                    <RowDefinition Height="115" />
+                    <RowDefinition Height="295" />
+                    <RowDefinition Height="115" />
+                    <RowDefinition Height="55" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="10" />
+
+                </Grid.ColumnDefinitions>
+
+                <Image HeightRequest="55" WidthRequest="310" Source="logoladoum" Grid.Column="2" />
+
+                <Button ImageSource="menuicon.svg"
+                Grid.Column="0"
+                WidthRequest="30"
+                HeightRequest="50"
+                Padding="0,0,15,0"
+                HorizontalOptions="Start"
+                BackgroundColor="#FFF1EB"
+                x:Name="btnMenuCatRac"
+                Clicked="btnMenuCatRac_Clicked"/>
+
+                <Button ImageSource="usuarioicon.svg"
+                Grid.Column="5"
+                WidthRequest="35"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                Background="#FFF1EB"
+                x:Name="btnUsuarioRac"
+                Clicked="btnUsuarioRac_Clicked"/>
+
+                <Image HeightRequest="170" WidthRequest="395" Source="rapetcat" Grid.Row="1" Grid.Column="2" />
+
+
+                <Label Grid.Row="2"
+                        Grid.Column="1"
+                        Text="Confira alguns exemplos"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Padding="45,0,0,0"
+                        HorizontalOptions="Start"
+                        FontSize="Medium"
+                        WidthRequest="280"
+                        HeightRequest="40" />
+                
+                <BoxView  Grid.Row="2"
+                          Grid.Column="2"
+                          HeightRequest="2" 
+                          WidthRequest="120" 
+                          Color="#959595" 
+                          Margin="0,30,0,0"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="Center" />
+
+                <Image HeightRequest="170" WidthRequest="395" Source="racaocatum" Grid.Row="3" Grid.Column="2" />
+
+                <Image HeightRequest="170" WidthRequest="395" Source="racaocatdois" Grid.Row="4" Grid.Column="2" />
+
+                <Image HeightRequest="170" WidthRequest="395" Source="racaocatres" Grid.Row="5" Grid.Column="2" />
+
+
+            </Grid>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

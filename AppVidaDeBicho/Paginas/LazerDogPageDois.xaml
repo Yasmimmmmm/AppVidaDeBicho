@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppVidaDeBicho.Paginas.LazerDogPageDois"
+             Title="LazerDogPageDois"
+             BackgroundColor="#FFF1EB"
+             NavigationPage.HasNavigationBar="False"         
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F1BFA8"/>
+    </ContentPage.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout Margin="10"  Padding="15"  Spacing="5">
+
+            <Grid ColumnSpacing="4" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="15" />
+                    <RowDefinition Height="113" />
+                    <RowDefinition Height="22" />
+                    <RowDefinition Height="355" />
+                    <RowDefinition Height="145" />
+                    <RowDefinition Height="45" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="10" />
+
+                </Grid.ColumnDefinitions>
+
+                <Image HeightRequest="55" WidthRequest="310" Source="logoladoum" Grid.Column="2" />
+
+                <Button ImageSource="menuicon.svg"
+                     Grid.Column="0"
+                     WidthRequest="30"
+                     HeightRequest="50"
+                     Padding="0,0,15,0"
+                     HorizontalOptions="Start"
+                     BackgroundColor="#FFF1EB"
+                     x:Name="btnMenuDLDois"
+                     Clicked="btnMenuDLDois_Clicked"/>
+
+                <Button ImageSource="usuarioicon.svg"
+                     Grid.Column="5"
+                     WidthRequest="35"
+                     HeightRequest="50"
+                     HorizontalOptions="Center"
+                     Background="#FFF1EB"
+                     x:Name="btnUsuarioDLDois"
+                        Clicked="btnUsuarioDLDois_Clicked"/>
+
+                <Image HeightRequest="170" WidthRequest="395" Source="lazer" Grid.Row="1" Grid.Column="2" />
+
+                <Label Grid.Row="2"
+                    Grid.Column="1"
+                    Text="Coisas Fáceis:"
+                    TextColor="Black"
+                    Padding="75,0,0,0"
+                    HorizontalOptions="Start"
+                    FontSize="Medium"
+                    WidthRequest="280"
+                    HeightRequest="40" />
+
+                <Label Grid.Row="3"
+                    Grid.Column="1"
+                    Text="SONEQUINHAS"
+                    TextColor="Black"
+                    Padding="69,0,0,0"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    FontSize="Medium"
+                    WidthRequest="340"
+                    HeightRequest="120" />
+
+
+                <Button ImageSource="iconladoesq.svg"
+                         Grid.Column="0"
+                         Grid.Row="4"
+                         WidthRequest="35"
+                         HeightRequest="50"
+                         HorizontalOptions="Center"
+                         Background="#FFF1EB" 
+                        x:Name="btnIconEsqDog"
+                        Clicked="btnIconEsqDog_Clicked"/>
+
+                <Image HeightRequest="370" WidthRequest="395" Source="doglazerdois" Grid.Row="4" Grid.Column="2" Margin="10,0,0,0" />
+
+                <Button ImageSource="iconlado.svg"
+                     Grid.Column="5"
+                     Grid.Row="4"
+                     WidthRequest="35"
+                     HeightRequest="50"
+                     HorizontalOptions="Center"
+                     Background="#FFF1EB"
+                     x:Name="btnIconDireitaDogDois"
+                     Clicked="btnIconDireitaDogDois_Clicked"/>
+
+                <Label Grid.Row="5"
+                    Grid.Column="1"
+                    Text="Além de ser uma divertida atividade recreativa, a natação para cachorro auxilia de forma geral no gasto de energia, melhora a circulação sanguínea, promove maior condicionamento físico e respiratório e reabilita problemas emocionais de cães com trauma de água."
+                    TextColor="Black"
+                    Padding="15,40,0,0"
+                    HorizontalOptions="Start"
+                    FontSize="Small"
+                    WidthRequest="280"
+                    HeightRequest="200" />
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

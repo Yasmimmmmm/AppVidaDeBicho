@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppVidaDeBicho.Paginas.LoginPage"
+             BackgroundColor="#FFF1EB"
+             NavigationPage.HasNavigationBar="False"         
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F1BFA8"/>
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout Margin="10"  Padding="15"  Spacing="15">
+        
+        <Image HeightRequest="80" WidthRequest="320" Source="logoladoum"/>
+
+
+        <Label Text="Digite seu Login para entrar na sua conta. "
+               TextColor="Black"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Padding="0,75,0,25"
+               FontSize="Medium" />
+
+        <Frame BackgroundColor="#CBCFBF" BorderColor="#515546" Padding="3">
+            <Entry x:Name="txtEmail"
+               Placeholder="Digite seu Email"
+               Keyboard="Email"
+               PlaceholderColor="#515546"
+                  />
+        </Frame>
+
+        <Frame BackgroundColor="#CBCFBF" BorderColor="#515546" Padding="3">
+            <Entry Placeholder="Digite sua Senha" 
+               x:Name="txtSenha" 
+               IsPassword="True"
+               PlaceholderColor="#515546" />
+        </Frame>
+
+        <Border Stroke="#34201A" StrokeThickness="2" BackgroundColor="#F1BFA8" WidthRequest="170" Margin="20">
+            <Button Text="ENTRAR"
+                TextColor="Black"
+                WidthRequest="230"
+                FontAttributes="Bold"
+                x:Name="btnEntrar"
+                Clicked="btnEntrar_Clicked"
+                Background="#F1BFA8" />
+        </Border>
+
+
+        <Label Padding="0,30,0,0"
+               Text="Ou entre com:"
+               TextColor="Black"
+               HorizontalOptions="Center"
+               FontAttributes="Bold" 
+               FontSize="Body"/>
+
+        <Grid Padding="40,0,25,0"
+       ColumnSpacing="17" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="80" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Stroke="Black" StrokeThickness="2" BackgroundColor="White" 
+                    WidthRequest="85" HeightRequest="60">
+                <Button
+                 ImageSource="google.svg"
+                 HeightRequest="60"  
+                 WidthRequest="80"
+                 x:Name="btnGoogle"
+                 Clicked="btnGoogle_Clicked"
+                 BackgroundColor="#F2F2F2"/>
+            </Border>
+
+            <Border Grid.Column="1" Stroke="Black" StrokeThickness="2" BackgroundColor="White" 
+                   WidthRequest="85" HeightRequest="60">
+                <Button 
+                 ImageSource="facebook.svg"
+                 HeightRequest="60"  
+                 WidthRequest="80"
+                 x:Name="btnFace"
+                 Clicked="btnFace_Clicked"
+                 BackgroundColor="#F2F2F2"/>
+            </Border>
+
+            <Border Grid.Column="2" Stroke="Black" StrokeThickness="2" BackgroundColor="White" 
+                    WidthRequest="85" HeightRequest="60">
+                <Button
+                 ImageSource="twitter.svg"
+                 HeightRequest="60"  
+                 WidthRequest="80"
+                 x:Name="btnTwet"
+                 Clicked="btnTwet_Clicked"
+                 BorderColor="Black"
+                 BackgroundColor="#F2F2F2"/>
+            </Border>
+
+        </Grid>
+
+
+            <Button Margin="0,60"
+                    Text="Não tem conta? Cadastre-se aqui."
+                    TextColor="#515546"
+                    FontSize="Medium"
+                    HorizontalOptions="Center"
+                    FontAttributes="Bold"
+                    x:Name="btnRegistrarse"
+                    Clicked="btnRegistrarse_Clicked"
+                    Background="#FFF1EB" />
+
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppVidaDeBicho.Paginas.EditaUsuarioPage"
+             Title="EditaUsuarioPage"             
+             BackgroundColor="#FFF1EB"
+             NavigationPage.HasNavigationBar="False"         
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F1BFA8"/>
+    </ContentPage.Behaviors>
+
+
+    <VerticalStackLayout Margin="10"  Padding="15"  Spacing="5">
+        <Grid Padding="0,20,20,0"
+ColumnSpacing="4" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="130" />
+                <ColumnDefinition Width="50" />
+
+            </Grid.ColumnDefinitions>
+            <Image HeightRequest="80" WidthRequest="320" Source="logoladoum" Grid.Column="2" />
+
+            <Button ImageSource="iconvolta.png"
+                    Grid.Column="0"
+                    WidthRequest="10"
+                    Padding="0,0,0,70"
+                    HorizontalOptions="Start"
+                    x:Name="btnVoltarR"
+                    Clicked="btnVoltarR_Clicked"
+                    Background="#FFF1EB" />
+        </Grid>
+    
+        <Label Text="Crie aqui sua conta."
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+               FontSize="Medium" 
+               Margin="0,0,0,60"/>
+
+
+        <Frame BackgroundColor="#CBCFBF" BorderColor="#515546" Padding="3" Margin="0,0,0,13">
+            <Entry x:Name="txtNome"
+                   Text="{Binding Nome}"
+                   Placeholder="Nome e Sobrenome"
+                   PlaceholderColor="Black"
+                   Keyboard="Text" />
+        </Frame>
+
+        <Frame BackgroundColor="#CBCFBF" BorderColor="#515546" Padding="3" Margin="0,0,0,13">
+            <Entry x:Name="txtEmail"
+               Text="{Binding Email}"
+               Placeholder="E-mail"
+               PlaceholderColor="Black"
+               Keyboard="Email" />
+        </Frame>
+
+        <Frame BackgroundColor="#CBCFBF" BorderColor="#515546" Padding="3" Margin="0,0,0,13">
+            <Entry Text="{Binding Senha}" 
+                   Placeholder="Senha" 
+                   PlaceholderColor="Black"
+                   x:Name="txtSenha" 
+                   IsPassword="True" />
+        </Frame>
+
+        <Border Stroke="#34201A" StrokeThickness="2" BackgroundColor="#F1BFA8" WidthRequest="170" Margin="30">
+            <Button Text="CADASTRAR"
+                    TextColor="Black"
+                    WidthRequest="250"
+                    FontAttributes="Bold"
+                    x:Name="btnCadastrar"
+                    Clicked="btnCadastrar_Clicked"
+                    Background="#F1BFA8" />
+        </Border>
+
+        
+        <Label  Padding="0,30,0,20"
+                Text="Ou entre com:"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                FontAttributes="Bold" 
+                FontSize="Body"/>
+
+        
+        <Grid Padding="40,0,25,0"
+ColumnSpacing="17" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="80" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Stroke="Black" StrokeThickness="2" BackgroundColor="White" 
+             WidthRequest="85" HeightRequest="60">
+                <Button ImageSource="google.svg"
+                        HeightRequest="60"  
+                        WidthRequest="80"
+                        x:Name="btnGoogleR"
+                        Clicked="btnGoogleR_Clicked"
+                        BackgroundColor="#F2F2F2"/>
+            </Border>
+
+            <Border Grid.Column="1" Stroke="Black" StrokeThickness="2" BackgroundColor="White" 
+            WidthRequest="85" HeightRequest="60">
+                <Button ImageSource="facebook.svg"
+                        HeightRequest="60"  
+                        WidthRequest="80"
+                        x:Name="btnFaceR"
+                        Clicked="btnFaceR_Clicked"
+                        BackgroundColor="#F2F2F2"/>
+            </Border>
+
+            <Border Grid.Column="2" Stroke="Black" StrokeThickness="2" BackgroundColor="White" 
+             WidthRequest="85" HeightRequest="60">
+                <Button ImageSource="twitter.svg"
+                        HeightRequest="60"  
+                        WidthRequest="80"
+                        x:Name="btnTwetR"
+                        Clicked="btnTwetR_Clicked"
+                        BorderColor="Black"
+                        BackgroundColor="#F2F2F2"/>
+            </Border>
+        </Grid>
+
+
+        
+
+    </VerticalStackLayout>
+</ContentPage>

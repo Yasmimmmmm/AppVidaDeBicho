@@ -1,0 +1,215 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AppVidaDeBicho
+build_property.ProjectDir = C:\Users\SENAI3EM\Desktop\MAUI\AppVidaDeBicho\AppVidaDeBicho\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/ConsultaCatPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.ConsultaCatPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\ConsultaCatPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\ConsultaCatPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/ConsultaDogPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.ConsultaDogPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\ConsultaDogPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\ConsultaDogPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/EditaUsuarioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.EditaUsuarioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\EditaUsuarioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\EditaUsuarioPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/EscolhaCatPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.EscolhaCatPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\EscolhaCatPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\EscolhaCatPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/EscolhaDogPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.EscolhaDogPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\EscolhaDogPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\EscolhaDogPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/FacePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.FacePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\FacePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\FacePage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/GooglePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.GooglePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\GooglePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\GooglePage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/HomeCatPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.HomeCatPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\HomeCatPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\HomeCatPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/HomeDogPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.HomeDogPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\HomeDogPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\HomeDogPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/LazerCatPageDois.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.LazerCatPageDois.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\LazerCatPageDois.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\LazerCatPageDois.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/LazerCatPageTres.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.LazerCatPageTres.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\LazerCatPageTres.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\LazerCatPageTres.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/LazerCatPageUm.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.LazerCatPageUm.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\LazerCatPageUm.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\LazerCatPageUm.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/LazerDogPageDois.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.LazerDogPageDois.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\LazerDogPageDois.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\LazerDogPageDois.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/LazerDogPageTres.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.LazerDogPageTres.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\LazerDogPageTres.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\LazerDogPageTres.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/LazerDogPageUm.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.LazerDogPageUm.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\LazerDogPageUm.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\LazerDogPageUm.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\LoginPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/QualPetPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.QualPetPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\QualPetPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\QualPetPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/RacaoCatPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.RacaoCatPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\RacaoCatPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\RacaoCatPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/RacaoDogPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.RacaoDogPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\RacaoDogPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\RacaoDogPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/SobreCatPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.SobreCatPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\SobreCatPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\SobreCatPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/SobreDogPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.SobreDogPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\SobreDogPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\SobreDogPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/TwetPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas.TwetPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\TwetPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\TwetPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/_MenuCatPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas._MenuCatPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\_MenuCatPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\_MenuCatPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/_MenuDogPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas._MenuDogPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\_MenuDogPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\_MenuDogPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/_PerfilCatPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas._PerfilCatPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\_PerfilCatPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\_PerfilCatPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/_PerfilDogPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas._PerfilDogPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\_PerfilDogPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\_PerfilDogPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/_UsuarioCatPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas._UsuarioCatPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\_UsuarioCatPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\_UsuarioCatPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Paginas/_UsuarioDogPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Paginas._UsuarioDogPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Paginas\_UsuarioDogPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Paginas\_UsuarioDogPage.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/SENAI3EM/Desktop/MAUI/AppVidaDeBicho/AppVidaDeBicho/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppVidaDeBicho.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

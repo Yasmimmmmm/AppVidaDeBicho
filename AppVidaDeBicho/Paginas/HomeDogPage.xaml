@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppVidaDeBicho.Paginas.HomeDogPage"
+             Title="HomeDogPage"         
+             BackgroundColor="#FFF1EB"
+             NavigationPage.HasNavigationBar="False"         
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F1BFA8"/>
+    </ContentPage.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout Margin="10"  Padding="15"  Spacing="5">
+
+            <Grid ColumnSpacing="4" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="15" />
+                    <RowDefinition Height="415" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="10" />
+
+                </Grid.ColumnDefinitions>
+
+                <Image HeightRequest="55" WidthRequest="310" Source="logoladoum" Grid.Column="2" />
+
+                <Button ImageSource="menuicon.svg"
+                        Grid.Column="0"
+                        WidthRequest="30"
+                        HeightRequest="50"
+                        Padding="0,0,15,0"
+                        HorizontalOptions="Start"
+                        BackgroundColor="#FFF1EB"
+                        x:Name="btnMenuDogHD"
+                        Clicked="btnMenuDogHD_Clicked"/>
+
+                <Button ImageSource="usuarioicon.svg"
+                        Grid.Column="5"
+                        WidthRequest="35"
+                        HeightRequest="50"
+                        HorizontalOptions="Center"
+                        Background="#FFF1EB"
+                        x:Name="btnUsuarioDogHD"
+                        Clicked="btnUsuarioDogHD_Clicked"/>
+
+                <Image HeightRequest="170" WidthRequest="395" Source="bemvindo" Grid.Row="1" Grid.Column="2" />
+
+                <Button Grid.Row="2"
+                        Grid.Column="2"
+                        BackgroundColor="Transparent"
+                        WidthRequest="320"
+                        HeightRequest="180"
+                        ImageSource="lazerdog.svg"
+                        HorizontalOptions="Center"
+                        x:Name="btnLazerHD"
+                        Clicked="btnLazerHD_Clicked"
+                   />
+
+            </Grid>
+
+
+            <Grid Padding="2,0,0,0"  ColumnSpacing="1" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="160" />
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="14" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="59" />
+                    <ColumnDefinition Width="35" />
+
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="1"
+                        BackgroundColor="Transparent"
+                        WidthRequest="360"
+                        HeightRequest="210"
+                        ImageSource="consultadog.svg"
+                        HorizontalOptions="Center"
+                        x:Name="btnConsultaHD"
+                        Clicked="btnConsultaHD_Clicked"/>
+
+                <Button Grid.Column="4"
+                        BackgroundColor="Transparent"
+                        WidthRequest="360"
+                        HeightRequest="210"
+                        ImageSource="racaodog.svg"
+                        HorizontalOptions="Center" 
+                        x:Name="btnRacaoHD"
+                        Clicked="btnRacaoHD_Clicked"/>
+
+                <Button Grid.Row="1" 
+                    Grid.Column="2" 
+                    BackgroundColor="Transparent"
+                    HeightRequest="10" 
+                    WidthRequest="10" 
+                    Padding="20,9,0,0"
+                    ImageSource="iconbaixo" />
+            </Grid>
+
+
+
+            <Grid Padding="2,0,0,0"  ColumnSpacing="1" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="140" />
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="220"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="14" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="59" />
+                    <ColumnDefinition Width="35" />
+
+                </Grid.ColumnDefinitions>
+
+                <Image HeightRequest="170" WidthRequest="395" Source="sobrenos" Grid.Row="0" Grid.Column="2" />
+
+
+                <Button Grid.Row="1"
+                    Grid.Column="2"
+                    Text="CLIQUE AQUI"
+                    TextColor="White"
+                    WidthRequest="127"
+                    HeightRequest="50"
+                    FontAttributes="Bold"
+                    FontSize="Body"
+                    Margin="14,0,0,0"
+                    BackgroundColor="#2D364F"
+                    x:Name="btnSobreNosHD"
+                    Clicked="btnSobreNosHD_Clicked"/>
+
+                <Image HeightRequest="170" WidthRequest="395" Source="bichinhos" Grid.Row="2" Grid.Column="2" Margin="20,0,0,0"/>
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppVidaDeBicho.Paginas.EscolhaCatPage"
+             Title="EscolhaCatPage"
+             BackgroundColor="#FFF1EB"
+             NavigationPage.HasNavigationBar="False"         
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F1BFA8"/>
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout Margin="10"  Padding="15"  Spacing="5">
+
+        <Grid Padding="0,20,20,0"  ColumnSpacing="4" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="130" />
+                <ColumnDefinition Width="50" />
+
+            </Grid.ColumnDefinitions>
+            <Image HeightRequest="80" WidthRequest="320" Source="logoladoum" Grid.Column="2" />
+
+            <Button ImageSource="iconvolta.png"
+                    Grid.Column="0"
+                    WidthRequest="10"
+                    Padding="0,0,0,70"
+                    HorizontalOptions="Start"
+                    x:Name="btnVoltarCat"
+                    Clicked="btnVoltarCat_Clicked"
+                    Background="#FFF1EB" />
+        </Grid>
+
+        <Grid Padding="0,30,20,0"  ColumnSpacing="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350" />
+
+            </Grid.ColumnDefinitions>
+            <Image HeightRequest="200" WidthRequest="400" Source="caticondois" />
+        </Grid>
+
+        <Label Text="Tem certeza dessa escolha?"
+               TextColor="Black"
+               HorizontalOptions="Center"
+               FontSize="Medium"
+               FontAttributes="Bold"
+               Padding="0,80,0,0"/>
+
+        <Grid Padding="0,0,20,0"  ColumnSpacing="4" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350" />
+
+            </Grid.ColumnDefinitions>
+            <Button Text="CLIQUE AQUI E CONTINUE"
+                        TextColor="Black"
+                        WidthRequest="230"
+                        FontAttributes="Bold"
+                        FontSize="Body"
+                        Background="#CBCFBF"
+                        Margin="50,0,50,100"
+                        x:Name="btnHomeCat"
+                        Clicked="btnHomeCat_Clicked"/>
+        </Grid>
+
+
+        <Grid Padding="0,10,0,0"  ColumnSpacing="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350" />
+
+            </Grid.ColumnDefinitions>
+            <Image HeightRequest="150" WidthRequest="350" Source="catum" />
+        </Grid>
+
+
+    </VerticalStackLayout>
+</ContentPage>

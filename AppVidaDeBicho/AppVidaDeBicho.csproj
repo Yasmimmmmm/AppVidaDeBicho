@@ -1,0 +1,212 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
+
+		<!-- Note for MacCatalyst:
+		The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
+		When specifying both architectures, use the plural <RuntimeIdentifiers> instead of the singular <RuntimeIdentifier>.
+		The Mac App Store will NOT accept apps with ONLY maccatalyst-arm64 indicated;
+		either BOTH runtimes must be indicated or ONLY macatalyst-x64. -->
+		<!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
+
+		<OutputType>Exe</OutputType>
+		<RootNamespace>AppVidaDeBicho</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Display name -->
+		<ApplicationTitle>AppVidaDeBicho</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.appvidadebicho</ApplicationId>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splashs.svg" BaseSize="1020,1040" color="#FFF1EB" />
+		
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\bemvindo.svg" />
+	  <None Remove="Resources\Images\bichinhos.svg" />
+	  <None Remove="Resources\Images\catcinco.svg" />
+	  <None Remove="Resources\Images\catdois.svg" />
+	  <None Remove="Resources\Images\caticon.svg" />
+	  <None Remove="Resources\Images\caticondois.svg" />
+	  <None Remove="Resources\Images\catlazerdois.svg" />
+	  <None Remove="Resources\Images\catlazertres.svg" />
+	  <None Remove="Resources\Images\catlazerum.svg" />
+	  <None Remove="Resources\Images\catquatro.svg" />
+	  <None Remove="Resources\Images\catres.svg" />
+	  <None Remove="Resources\Images\catum.svg" />
+	  <None Remove="Resources\Images\consmedcat.svg" />
+	  <None Remove="Resources\Images\consultacat.svg" />
+	  <None Remove="Resources\Images\consultadog.svg" />
+	  <None Remove="Resources\Images\dogcinco.svg" />
+	  <None Remove="Resources\Images\dogdois.svg" />
+	  <None Remove="Resources\Images\dogicon.svg" />
+	  <None Remove="Resources\Images\dogicondois.svg" />
+	  <None Remove="Resources\Images\doglazerdois.svg" />
+	  <None Remove="Resources\Images\doglazertres.svg" />
+	  <None Remove="Resources\Images\doglazerum.svg" />
+	  <None Remove="Resources\Images\dogquatro.svg" />
+	  <None Remove="Resources\Images\dogtres.svg" />
+	  <None Remove="Resources\Images\dogum.svg" />
+	  <None Remove="Resources\Images\facebook.svg" />
+	  <None Remove="Resources\Images\google.svg" />
+	  <None Remove="Resources\Images\iconbaixo.svg" />
+	  <None Remove="Resources\Images\iconlado.svg" />
+	  <None Remove="Resources\Images\iconladoesq.svg" />
+	  <None Remove="Resources\Images\iconperfil.svg" />
+	  <None Remove="Resources\Images\iconvolta.svg" />
+	  <None Remove="Resources\Images\lazer.svg" />
+	  <None Remove="Resources\Images\lazercat.svg" />
+	  <None Remove="Resources\Images\lazerdog.svg" />
+	  <None Remove="Resources\Images\logoladoum.svg" />
+	  <None Remove="Resources\Images\menuicon.svg" />
+	  <None Remove="Resources\Images\racaocat.svg" />
+	  <None Remove="Resources\Images\racaocatdois.svg" />
+	  <None Remove="Resources\Images\racaocatres.svg" />
+	  <None Remove="Resources\Images\racaocatum.svg" />
+	  <None Remove="Resources\Images\racaodog.svg" />
+	  <None Remove="Resources\Images\racaodogdois.svg" />
+	  <None Remove="Resources\Images\racaodogtres.svg" />
+	  <None Remove="Resources\Images\racaodogum.svg" />
+	  <None Remove="Resources\Images\rapetcat.svg" />
+	  <None Remove="Resources\Images\sobrenos.svg" />
+	  <None Remove="Resources\Images\sobretexto.svg" />
+	  <None Remove="Resources\Images\twitter.svg" />
+	  <None Remove="Resources\Images\usuarioicon.svg" />
+	  <None Remove="Resources\Images\vacina.svg" />
+	  <None Remove="Resources\Images\vacinacat.svg" />
+	  <None Remove="Resources\Images\vacinadog.svg" />
+	  <None Remove="Resources\Images\xicon.svg" />
+	</ItemGroup>
+
+	
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Paginas\ConsultaCatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\ConsultaDogPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\EditaUsuarioPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\EscolhaCatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\EscolhaDogPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\FacePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\GooglePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\HomeCatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\HomeDogPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\LazerCatPageDois.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\LazerCatPageTres.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\LazerCatPageUm.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\LazerDogPageDois.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\LazerDogPageTres.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\LazerDogPageUm.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\QualPetPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\RacaoCatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\RacaoDogPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\SobreCatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\SobreDogPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\TwetPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\_MenuCatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\_MenuDogPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\_PerfilCatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\_PerfilDogPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\_UsuarioCatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\_UsuarioDogPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+</Project>

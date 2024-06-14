@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
+    <ActiveDebugFramework>net8.0-android</ActiveDebugFramework>
+    <ActiveDebugProfile>pixel_5_-_api_34_9 (Android 14.0 – API 34)</ActiveDebugProfile>
+    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
+  </PropertyGroup>
+  <ItemGroup>
+    <MauiXaml Update="Paginas\ConsultaCatPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\ConsultaDogPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\EditaUsuarioPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\EscolhaCatPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\EscolhaDogPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\FacePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\GooglePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\HomeCatPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\HomeDogPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\LazerCatPageDois.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\LazerCatPageTres.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\LazerCatPageUm.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\LazerDogPageDois.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\LazerDogPageTres.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\LazerDogPageUm.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\QualPetPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\RacaoCatPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\RacaoDogPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\SobreCatPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\SobreDogPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\TwetPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\_MenuCatPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\_MenuDogPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\_PerfilCatPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\_PerfilDogPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\_UsuarioCatPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Paginas\_UsuarioDogPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="AppShell.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Platforms\Windows\App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Platforms\Windows\Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Resources\Styles\Colors.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Resources\Styles\Styles.xaml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>

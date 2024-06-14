@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppVidaDeBicho.Paginas._PerfilCatPage"
+             Title="_PerfilCatPage"         
+             BackgroundColor="#FFF1EB"
+             NavigationPage.HasNavigationBar="False"         
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#F1BFA8"/>
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout Margin="10"  Padding="15"  Spacing="5">
+
+        <Grid Padding="0,20,20,0"  ColumnSpacing="4" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="11" />
+                <RowDefinition Height="140" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="120" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="130" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="50" />
+
+            </Grid.ColumnDefinitions>
+            <Image HeightRequest="80" WidthRequest="320" Source="logoladoum" Grid.Column="2" />
+
+            <Button ImageSource="iconvolta.png"
+                    Grid.Column="0"
+                    WidthRequest="10"
+                    Padding="0,0,0,70"
+                    HorizontalOptions="Start"
+                    Background="#FFF1EB" 
+                    x:Name="btnVoltarPerfilCat"
+                    Clicked="btnVoltarPerfilCat_Clicked"/>
+
+            <Border Margin="0,0,20,0" Stroke="#0D1C43" StrokeThickness="2" BackgroundColor="#F1BFA8" WidthRequest="330" HeightRequest="340" Grid.Row="5" Grid.Column="2">
+                
+            </Border>
+
+            <Label Text="SEU PERFIL"
+                   TextColor="Black"
+                   Grid.Column="2"
+                   Grid.Row="4"
+                   WidthRequest="145"
+                   HeightRequest="170"
+                   FontAttributes="Bold"
+                   FontSize="Title"
+                />
+
+            <Label Text="Imagens do seu Gatinho(a) :"
+                    TextColor="Black"
+                    Grid.Column="2"
+                    Grid.Row="4"
+                    WidthRequest="300"
+                    HeightRequest="60"
+                    FontAttributes="Bold"
+                 />
+            <Image Margin="0,0,20,0" HeightRequest="130" WidthRequest="330" Source="iconperfil.svg" Grid.Row="2" Grid.Column="2" />
+
+            <Image Margin="15,0,0,0" HeightRequest="130" WidthRequest="330" Source="catquatro.svg" Grid.Row="6" Grid.Column="1" />
+            <Image Margin="45,0,0,0" HeightRequest="130" WidthRequest="330" Source="catcinco.svg" Grid.Row="6" Grid.Column="3" />
+       
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
